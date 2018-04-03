@@ -50,21 +50,21 @@ def dynamictitle(x,y):
 
 ax1 = plt.subplot2grid((7, 4), (0, 0), rowspan=1, colspan=2)
 if len(date)>62:
-		plt.title('profit_v1 ' +dynamictitle(profitv1[-1], profitv1[-60]),fontsize=18)
+		plt.title('' +dynamictitle(profitv1[-1], profitv1[-60]),fontsize=18)
 else:
-		plt.title('profit_v1 ' +str(profitv1[-1]), fontsize=18)
+		plt.title('' +str(profitv1[-1]), fontsize=18)
 
 ax2 = plt.subplot2grid((7, 4), (0, 2), rowspan=1, colspan=2)
 if len(date)>62:
-		plt.title('profit_v2 ' +dynamictitle(profitv2[-1], profitv2[-60]),fontsize=18)
+		plt.title('' +dynamictitle(profitv2[-1], profitv2[-60]),fontsize=18)
 else:
-		plt.title('profit_v2 ' +str(profitv2[-1]), fontsize=18)
+		plt.title('' +str(profitv2[-1]), fontsize=18)
 
 ax3 = plt.subplot2grid((7, 4), (5, 0), rowspan=1, colspan=2)
 if len(date)>62:
-		plt.title('ilosc transakcji zaakceptowanych ' +dynamictitle(trans[-1], trans[-60]),fontsize=18)
+		plt.title('' +dynamictitle(trans[-1], trans[-60]),fontsize=18)
 else:
-		plt.title('ilosc transakcji zaakceptowanych ' +str(trans[-1]), fontsize=18)
+		plt.title('' +str(trans[-1]), fontsize=18)
 
 
 plot1=ax1.plot_date(date, profitv1, 'r-', linewidth=2)
