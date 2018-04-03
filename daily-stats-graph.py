@@ -63,9 +63,9 @@ for id in list:
         axes.set_ylim([-5,119])
 
 		id.plot_date(date, i, 'r', linewidth=2, label='% invalid')
-        id.plot_date(date, a, 'g', linewidth=2, label='% accepted')
-        id.plot_date(date, d, 'b', linewidth=2, label='% declined')
-        id.plot_date(date, c, 'k', linewidth=2, label='% cancelled')
+        id.plot_date(date, a, 'g', linewidth=2, label='% ')
+        id.plot_date(date, d, 'b', linewidth=2, label='% ')
+        id.plot_date(date, c, 'k', linewidth=2, label='% ')
         id.grid(True)
         if p==0:
         	plt.legend(loc='upper center',bbox_to_anchor=(0.5, 1.02),ncol=4,fancybox=True,prop={'size':13}, borderaxespad=0.)
